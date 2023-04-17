@@ -197,7 +197,7 @@ function cutBox(topLayer, overlap, size, delta) {
 // EVENTI
 restart.addEventListener("click", startGame);
 window.addEventListener("mousedown", eventHandler);
-window.addEventListener("touchstart", eventHandler);
+// window.addEventListener("touchstart ", eventHandler);
 window.addEventListener("keydown", function (event) {
   if (event.key == " ") {
     event.preventDefault();
