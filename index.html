@@ -23,6 +23,38 @@
     </script>
   </head>
   <body>
+
+    <!-- background video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="/media/vecteezy_retro-8-bit-pixel-white-clouds-on-blue-animated-background_2972850.mov" type="video/mp4">
+    </video>
+
+    <!-- background music -->
+    <audio id="bgMusic" controls autoplay>
+      <source src="/media/Kingdom Hearts - Rowdy Rumble - 8-Bit.mp3" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    
+    
+    <div id="instructions">
+      <div class="content  text-center shadow p-5 bg-dark border">
+        <p>Posiziona ogni blocco sopra il precedente</p>
+        <p>Click, tap o "space" per posizionare il blocco e far partire il gioco</p>
+      </div>
+    </div>
+    <div id="results">
+      <div class="content text-center shadow p-5 bg-dark border">
+        <p>MI DISPIACE, HAI PERSO</p>
+        <p>Hai totalizzato un punteggio di: <span id="scoreLoser">0</span></p>
+        <p>Premi R per giocare ancora, o clicca qui:</p>
+        <button class="btn btn-outline btn-light" id="restartBtn">Riprova</button>
+      </div>
+    </div>
+    <div id="score">0</div>
+
+    
+
+  
     
     
     <script type="module" src="script.js"></script>
